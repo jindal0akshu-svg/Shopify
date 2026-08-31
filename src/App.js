@@ -1,7 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
+import {useEffect} from 'react';
 
 function App() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +24,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <button onClick={() => navigate('/header', {state : {id:"1", name:"John"}})}>Go to Header</button>
+      <button onClick={() => navigate('/footer')}>Go to Footer</button>
+      <button onClick={() => navigate('/main')}>Go to Main</button>
     </div>
   );
 }
