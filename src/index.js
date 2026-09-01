@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Footer from './footer';
 import Header from './header';
-import C2f from './C2f';
+// import C2f from './C2f';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter , Routes , Route} from 'react-router-dom';
